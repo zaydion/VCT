@@ -1,0 +1,52 @@
+div {
+  height: 500px;
+}
+
+.dark-blue {
+  background-color: #000026;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.light-grey {
+  background-color: #f6f6f6;
+}
+
+.teal {
+  background-color: #01C5BB;
+}
+
+.white-text {
+  color: white;
+}
+
+#white-box {
+  height: 2em;
+  width: 6em;
+  border: 1px solid white;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  padding: 0.75em 0 0 0;
+}
+
+#main-logo {
+  font-family: Time New Roman;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.arrow-divider {
+  height: 2em;
+  width: 3em;
+  border-radius: 50%;
+  margin: -4.5% auto 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px
+}
+
+
