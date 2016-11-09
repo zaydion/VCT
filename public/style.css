@@ -1,6 +1,4 @@
-div {
-  height: 500px;
-}
+
 
 .dark-blue {
   background-color: #000026;
@@ -22,6 +20,17 @@ div {
   color: white;
 }
 
+.dark-blue-text {
+  background-color: #000026;
+}
+
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
 #white-box {
   height: 2em;
   width: 6em;
@@ -33,17 +42,82 @@ div {
 }
 
 #main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Time New Roman;
   font-size: 3em;
-  text-align: center;
-  margin-top: 20%;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
+
 .arrow-divider {
-  text-align: center;
-  margin-left: 50%;
-  padding: 1.5em;
-  border-radius: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
+
+.arrow {
+  text-align: center;
+  font-size: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.6em;
+  padding-top: 1em;
+  border-radius: 50%;
+  margin-top: -3%;
+  width: 2em;
+}
+
+#field {
+  padding: 10% 0 10% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#field-title {
+  font-family: Helvetica;
+}
+
+.skinny {
+  font-weight: 100;
+}
+
+.block-description {
+  width: 25em;
+  margin-right: 3%;
+  font-family: Times New Roman;
+  font-weight: 100;
+}
+
+.block-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3%
+}
+
+#triangle-circle {
+  height: 15em;
+  width: 15em;
+  background-image: url('triangle-circle.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#plus-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
 
 
