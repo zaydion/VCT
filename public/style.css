@@ -3,7 +3,8 @@ h3 {
 }
 
 ul li {
-  /*list-style: none;*/
+  list-style: none;
+  margin: 5%;
 }
 
 .dark-blue {
@@ -190,7 +191,14 @@ ul li {
 
 #latest-tweets {
   border: 1px solid white;
-    width: 20em;
+  width: 20em;
+}
 
+.social-links {
+}
+
+#contact-me {
+  padding: 20%;
+  text-align: center;
 }
 
