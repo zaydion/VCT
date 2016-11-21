@@ -1,4 +1,10 @@
+h3 {
+  margin: 0;
+}
 
+ul li {
+  /*list-style: none;*/
+}
 
 .dark-blue {
   background-color: #000026;
@@ -22,6 +28,11 @@
 
 .dark-blue-text {
   background-color: #000026;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 #nav {
@@ -89,7 +100,7 @@
 .block-description {
   width: 25em;
   margin-right: 3%;
-  font-family: 'Times New Roman';
+
 }
 
 .block-icon {
@@ -157,5 +168,29 @@
   border: 1px solid white;
   padding: 5% 0 5% 0;
   font-weight: bolder;
+}
+
+#contact {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 14% 12% 14% 12%;
+  border: 1px solid white;
+}
+
+#contact-info {
+  flex-flow: column wrap;
+  border: 1px solid white;
+  width: 20em;
+}
+
+#latest-tweets {
+  border: 1px solid white;
+    width: 20em;
+
 }
 
