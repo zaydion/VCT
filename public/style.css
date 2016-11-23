@@ -7,8 +7,8 @@ ul li {
   margin: 5%;
 }
 
-.dark-blue {
-  background-color: #000026;
+.black {
+  background-color: #000;
 }
 
 .white {
@@ -25,10 +25,6 @@ ul li {
 
 .white-text {
   color: white;
-}
-
-.dark-blue-text {
-  background-color: #000026;
 }
 
 .column {
@@ -57,12 +53,17 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Time New Roman;
-  font-size: 3em;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  margin-top: 10%;
+  padding-bottom: 10%;
 }
 
+.logo-image {
+  background-image: url('vct_logo.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 15em;
+  height: 15em;
+}
 
 .arrow-divider {
   display: flex;
@@ -216,7 +217,7 @@ ul li {
 #contact-form input {
   font-family: 'Times New Roman';
   font-style: italic;
-  background-color: #000026;
+  background-color: #000;
   color: white;
   margin-bottom: 5%;
   border-style: none;
@@ -243,7 +244,7 @@ ul li {
 }
 
 .form-message {
-  background-color: #000026;
+  background-color: #000;
   color: white;
   order: 3;
   border: 1px solid white;
