@@ -78,7 +78,7 @@ ul li {
   padding-bottom: 0.6em;
   padding-top: 1em;
   border-radius: 50%;
-  margin-bottom: -3%;
+  margin-bottom: -2%;
   width: 2em;
 }
 
@@ -171,34 +171,130 @@ ul li {
   font-weight: bolder;
 }
 
-#contact {
-  display: flex;
-  flex-flow: column wrap;
-}
-
 #contact-section {
   display: flex;
   justify-content: space-around;
   padding: 14% 12% 14% 12%;
-  border: 1px solid white;
 }
 
 #contact-info {
-  flex-flow: column wrap;
-  border: 1px solid white;
   width: 20em;
 }
 
 #latest-tweets {
-  border: 1px solid white;
   width: 20em;
 }
 
-.social-links {
+.borderline {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+
+
+#contact-section ul {
+  width: 20em;
+  padding-left: 0;
 }
 
 #contact-me {
+  display: flex;
   padding: 20%;
   text-align: center;
+  justify-content: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+
+#contact-form input {
+  font-family: 'Times New Roman';
+  font-style: italic;
+  background-color: #000026;
+  color: white;
+  margin-bottom: 5%;
+  border-style: none;
+  border-bottom: 1px solid white;
+  padding: 2%;
+}
+
+#contact-form input:focus {
+  outline: none;
+}
+
+#contact-me input[name] {
+  display: flex;
+  flex-grow: 1;
+  order: 0;
+}
+
+#contact-me input[phone] {
+  order: 1;
+}
+
+#contact-me input[email] {
+  order: 2;
+}
+
+.form-message {
+  background-color: #000026;
+  color: white;
+  order: 3;
+  border: 1px solid white;
+}
+
+.form-message:focus {
+  outline: none;
+}
+
+#form-message-title {
+  text-align: left;
+  order: 2;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+@media only screen and (max-width: 680px) {
+  #contact-section h2 {
+    align-items: center;
+  }
+
+  #contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30%;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+
 }
 
