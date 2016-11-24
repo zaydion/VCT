@@ -2,7 +2,7 @@
 
 Took image of a design and built it using HTML and CSS:
 
-[VCT Mockup](http://vct-mockup.herokuapp.com/)
+### [VCT Mockup](http://vct-mockup.herokuapp.com/)
 
 
 Original image:
