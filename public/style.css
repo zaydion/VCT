@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------*/
+/* ---------------- GENERAL SETTINGS, COLORS ---------------------*/
+/*--------------------------------------------------------------*/
+
 h3 {
   margin: 0;
 }
@@ -7,8 +11,8 @@ ul li {
   margin: 5%;
 }
 
-.black {
-  background-color: #000;
+.black-blue {
+  background-color: #1d1d25;
 }
 
 .white {
@@ -26,6 +30,10 @@ ul li {
 .white-text {
   color: white;
 }
+
+/*--------------------------------------------------------------*/
+/* ---------------- NAVBAR ---------------------*/
+/*--------------------------------------------------------------*/
 
 .column {
   display: flex;
@@ -49,6 +57,10 @@ ul li {
   padding: 0.75em 0 0 0;
 }
 
+/*--------------------------------------------------------------*/
+/* ---------------- LOGO AREA ---------------------*/
+/*--------------------------------------------------------------*/
+
 #main-logo {
   display: flex;
   justify-content: center;
@@ -64,6 +76,10 @@ ul li {
   width: 15em;
   height: 15em;
 }
+
+/*--------------------------------------------------------------*/
+/* ---------------- ARROW DIVIDER ---------------------*/
+/*--------------------------------------------------------------*/
 
 .arrow-divider {
   display: flex;
@@ -82,6 +98,11 @@ ul li {
   margin-bottom: -2%;
   width: 2em;
 }
+
+
+/*--------------------------------------------------------------*/
+/* ---------------- UI/UX DESIGNER SECTION ---------------------*/
+/*--------------------------------------------------------------*/
 
 .field {
   padding: 10% 0 10% 0;
@@ -124,12 +145,16 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #1d1d25;
   width: 2em;
   height: 2em;
   font-size: 2em;
   border-radius: 50%;
 }
+
+/*--------------------------------------------------------------*/
+/* ----------------- FRONTEND DEV SECTION ---------------------*/
+/*--------------------------------------------------------------*/
 
 #big-curly-braces {
   font-size: 10em;
@@ -141,6 +166,11 @@ ul li {
 #specialty .block-description {
   margin-left: 7%;
 }
+
+
+/*--------------------------------------------------------------*/
+/* ---------------- PORTFOLIO SECTIION ---------------------*/
+/*--------------------------------------------------------------*/
 
 #portfolio-section {
   padding-top: 20%;
@@ -172,6 +202,11 @@ ul li {
   font-weight: bolder;
 }
 
+
+/*--------------------------------------------------------------*/
+/* ---------------- CONTACT SECTION ---------------------*/
+/*--------------------------------------------------------------*/
+
 #contact-section {
   display: flex;
   justify-content: space-around;
@@ -194,10 +229,18 @@ ul li {
   margin-top: 8%;
 }
 
-
 #contact-section ul {
   width: 20em;
   padding-left: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+/* ------------------------- FORM ------------------------------*/
+/*--------------------------------------------------------------*/
+
+#details {
+  width: 100%;
 }
 
 #contact-me {
@@ -217,7 +260,7 @@ ul li {
 #contact-form input {
   font-family: 'Times New Roman';
   font-style: italic;
-  background-color: #000;
+  background-color: #1d1d25;
   color: white;
   margin-bottom: 5%;
   border-style: none;
@@ -229,24 +272,39 @@ ul li {
   outline: none;
 }
 
-#contact-me input[name] {
-  display: flex;
-  flex-grow: 1;
+#contact-me .form-field input[name] {
+  width: 100%;
   order: 0;
 }
 
 #contact-me input[phone] {
   order: 1;
+  width: 100%;
 }
 
 #contact-me input[email] {
-  order: 2;
+  order: 1;
+  width: 100%;
+}
+
+.phone-email {
+  width: 100%;
+  display: flex;
+}
+
+.phone-email .form-field {
+  width: 100%;
+}
+
+.phone-email .form-field input[email] {
+  margin-left: 5%;
+
 }
 
 .form-message {
-  background-color: #000;
+  width: 100%;
+  background-color: #1d1d25;
   color: white;
-  order: 3;
   border: 1px solid white;
 }
 
@@ -256,8 +314,18 @@ ul li {
 
 #form-message-title {
   text-align: left;
-  order: 2;
+  padding-bottom: 2%;
+  padding-left: 1%;
 }
+
+.title-textarea {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*--------------------------------------------------------------*/
+/* ---------------- FORM PLACEHOLDER COLOR ---------------------*/
+/*--------------------------------------------------------------*/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
@@ -271,6 +339,10 @@ ul li {
 :-moz-placeholder { /* Firefox 18- */
   color: white;
 }
+
+/*--------------------------------------------------------------*/
+/* ---------------- MEDIA QUERY FOR 680PX ---------------------*/
+/*--------------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
   #contact-section h2 {
@@ -290,10 +362,23 @@ ul li {
     align-items: center;
   }
 
-  #contact-form {
+  #contact-form .form-field{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 
+  }
+
+  .phone-email {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .phone-email .form-field input[email] {
+    margin-left: 0;
+  }
+
+  .form-field input, textarea {
+    flex-grow: 1;
   }
 
 
